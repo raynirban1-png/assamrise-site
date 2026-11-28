@@ -14,10 +14,13 @@
   h1 { font-size:1.75rem; line-height:1.25; margin:0 0 .25rem; }
   h2 { font-size:1.15rem; margin:2.25rem 0 .5rem; }
   p, li { font-size:1rem; }
-  ul { padding-left:1.25rem; }
+  ul, ol { padding-left:1.25rem; }
   li { margin:.35rem 0; }
   .meta { color:var(--muted); font-size:.9rem; margin:0 0 2rem; }
   .card { background:var(--surface); border:1px solid var(--hairline); border-radius:12px; padding:1rem 1.25rem; margin:1.25rem 0; }
+  table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:.5rem .6rem; border-bottom:1px solid var(--hairline); }
+  th { font-weight:600; }
   a { color:var(--link); }
   footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--hairline); color:var(--muted); font-size:.9rem; }
 </style>
@@ -25,49 +28,81 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">AssamRise · Last updated 23 November 2026</p>
+  <p class="meta">AssamRise · Last updated 28 November 2026</p>
 
   <div class="card">
-    <p><strong>AssamRise does not collect your data.</strong> The app has no analytics, no advertising and no trackers. Everything you practise — every answer you give and everything the app records about your progress — stays on your phone. None of it is sent to us, and we cannot see any of it.</p>
+    <p><strong>Your practice stays on your phone.</strong> Every answer you give and everything the app records about your progress is kept on your phone. It is never sent to us, and we cannot see it. The app has no advertising, no analytics and no trackers.</p>
+    <p>If you choose to sign in with Google, we receive your name, your email address and an account number. We use them only to run your account and, if you subscribe, to connect your plan to your account.</p>
   </div>
 
   <h2>Who we are</h2>
   <p>AssamRise is an exam practice app for Assam government examinations, published by RayCode Studio. You can reach us at <a href="mailto:contact@assamrise.com">contact@assamrise.com</a>.</p>
 
+  <h2>Signing in with Google</h2>
+  <p>Signing in is optional for practice. You can use the free questions without an account. You need to sign in before you subscribe, so that your plan belongs to your account and follows you to a new phone.</p>
+  <p>Sign-in uses Google Sign-In and Firebase Authentication, both provided by Google. When you sign in:</p>
+  <ul>
+    <li><strong>We receive</strong> your name, your email address and an account number (a Firebase user ID) that identifies your account.</li>
+    <li><strong>Google, as our sign-in provider, also processes</strong> your device's IP address and basic device information (such as the Android version and phone model) to keep sign-in secure and prevent abuse.</li>
+    <li><strong>We do not receive</strong> your Google password, your contacts, your Google Drive or anything else from your Google account.</li>
+  </ul>
+  <p>Your name is used to greet you in the app. You can change the name the app greets you by in Profile → Account; that name is stored only on your phone.</p>
+
   <h2>What the app stores on your phone</h2>
-  <p>AssamRise saves the following on your device so that your practice continues where you left off. None of it is sent to us, and we cannot see any of it.</p>
+  <p>AssamRise saves the following on your device so that your practice continues where you left off. None of it is sent to us.</p>
   <ul>
     <li>Your settings: chosen exam, app language, question language, text size, reduce motion and vibration.</li>
     <li>Your practice: the sittings you have started or finished, which days you practised, and your mistakes schedule.</li>
     <li>Your progress: which questions you answered, how you answered them, your subject and topic records, and the figures the app uses to suggest what to practise next.</li>
-    <li>How many of the free questions you have used, and whether your free mock test has been taken.</li>
+    <li>How many of the free questions you have used, whether your free mock test has been taken, and which questions you opened while subscribed.</li>
+    <li>If you signed in: which account this phone's practice belongs to, and the name the app greets you by.</li>
   </ul>
-  <p>Uninstalling the app removes all of it from your phone.</p>
+  <p>A phone holds one learner's practice at a time. If you sign out, your practice stays on the phone, locked, until you sign in again with the same Google account.</p>
 
-  <h2>Android backup</h2>
-  <p>Android includes AssamRise in your phone's own backup to your Google account, unless you have turned backup off in your phone's settings. This is done by Android, not by us. The backup goes to your own Google account under Google's terms, and we have no access to it and cannot read it.</p>
-  <p>This is why your practice history and your free-question count usually come back when you reinstall the app on the same Google account. If you turn Android backup off, they will not.</p>
+  <h2>Subscriptions and payments</h2>
+  <p>When subscriptions are available, payment is handled entirely by Google Play. We never see or store your card details, UPI details, bank details or billing address.</p>
+  <p>To confirm your plan, we use RevenueCat, a subscription service. RevenueCat receives your AssamRise account number and the record of your purchase from Google Play — which plan you bought, when, and when it ends — and checks it with Google. It does not receive your practice history or your payment details.</p>
+
+  <h2>Who receives your data</h2>
+  <p>We do not sell your data and we do not use it for advertising. Only these service providers process it, on our behalf and only to provide the service:</p>
+  <table>
+    <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
+    <tr><td>Google (Firebase Authentication, Google Sign-In)</td><td>Name, email address, account number, IP address and basic device information</td><td>Signing you in securely</td></tr>
+    <tr><td>RevenueCat</td><td>Account number and purchase records</td><td>Confirming your subscription</td></tr>
+    <tr><td>Google Play</td><td>Your purchase, under your Google account</td><td>Taking payment</td></tr>
+  </table>
+  <p>All data sent from the app travels encrypted.</p>
 
   <h2>Permissions</h2>
-  <p>AssamRise asks for no permissions. It cannot use your camera, microphone, contacts, files or location. Practice works entirely offline: every question, picture and explanation is already on your phone, so nothing has to be fetched while you study.</p>
+  <ul>
+    <li><strong>Internet</strong> — used only to sign in and to check your subscription. Practice itself works entirely offline: every question, picture and explanation is already on your phone.</li>
+    <li><strong>Notifications</strong> — only if you turn on daily study reminders. Reminders are created on your phone; nothing is sent to us.</li>
+  </ul>
+  <p>AssamRise cannot use your camera, microphone, contacts, files or location.</p>
 
-  <h2>Payments</h2>
-  <p>If you subscribe, the payment is handled entirely by Google Play. We never see or store your card details, your bank details or your billing address. Google Play records your purchase against your Google account; that is what restores your subscription if you reinstall the app or change phone. Google's own privacy policy governs that transaction.</p>
+  <h2>Android backup</h2>
+  <p>Android includes AssamRise in your phone's own backup to your Google account, unless you have turned backup off in your phone's settings. This is done by Android, not by us, and we cannot read it. It is why your practice history usually comes back when you reinstall the app. After a restore, you sign in with Google again before a signed-in account's practice opens.</p>
+
+  <h2>How long we keep your data</h2>
+  <p>We keep your account details for as long as you have an account. When you delete your account, your sign-in account is deleted straight away, and your subscription records at RevenueCat are deleted within 7 days. Google Play keeps its own record of any purchase under Google's terms.</p>
+
+  <h2>Deleting your account</h2>
+  <p>In the app, open <strong>Profile → Account → Delete account</strong>. This deletes your sign-in account and erases this phone's practice history. It cannot be undone, and it does not refund any time left on a plan. You can also ask us by email; see <a href="/delete-account">Delete your AssamRise account</a> for both ways and exactly what is deleted.</p>
 
   <h2>Children</h2>
-  <p>AssamRise is made for candidates preparing for government recruitment and eligibility examinations. It is not directed at children under 13, and it collects no data from anyone.</p>
+  <p>AssamRise is made for candidates preparing for government recruitment and eligibility examinations. It is not directed at children under 13.</p>
 
   <h2>Questions and content</h2>
   <p>AssamRise practises questions from publicly released past papers of the respective examination bodies. AssamRise is an independent study app and is not affiliated with, endorsed by, or connected to APSC, SEBA, SLPRB, the Government of Assam or any other examination authority.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If the app ever starts collecting data — for example if we add sign-in or progress sync across devices — we will update this page before that version is released, and the change will be visible in the app's Data safety section on Google Play.</p>
+  <p>If what the app collects changes, we will update this page before that version is released, and the change will be visible in the app's Data safety section on Google Play. The date at the top shows when this page last changed.</p>
 
   <h2>Contact</h2>
-  <p>Write to <a href="mailto:contact@assamrise.com">contact@assamrise.com</a> with any question about this policy or about what the app stores.</p>
+  <p>Write to <a href="mailto:contact@assamrise.com">contact@assamrise.com</a> with any question about this policy or about your data.</p>
 
   <footer>
-    AssamRise · <a href="/terms">Terms of Use</a>
+    AssamRise · <a href="/terms">Terms of Use</a> · <a href="/delete-account">Delete your account</a>
   </footer>
 </main>
 </body>
